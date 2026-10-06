@@ -126,41 +126,51 @@ function App() {
       <main>
         <section id="home" className="relative flex min-h-[780px] items-center overflow-hidden bg-[#100e0c] pt-20 sm:min-h-[820px] lg:min-h-[890px]">
           <div className="hero-grid pointer-events-none absolute inset-0 opacity-70" />
-          <div className="hero-orb pointer-events-none absolute inset-0" />
-          <div className="pointer-events-none absolute -right-[15%] top-[13%] h-[720px] w-[720px] rounded-full border border-[#f46a28]/10 sm:right-[-7%] lg:right-[2%] lg:top-[12%]">
-            <div className="absolute inset-[9%] rounded-full border border-[#f46a28]/10" />
-            <div className="absolute inset-[20%] rounded-full border border-[#f46a28]/10" />
-          </div>
-          <div className="relative mx-auto grid w-full max-w-[1440px] items-center gap-5 px-5 pb-16 pt-8 sm:px-8 lg:grid-cols-[1.05fr_.95fr] lg:px-14 lg:pb-20 lg:pt-0">
+          <div className="relative mx-auto grid w-full max-w-[1440px] items-center gap-8 px-5 pb-16 pt-8 sm:px-8 lg:grid-cols-[1.05fr_.95fr] lg:px-14 lg:pb-20 lg:pt-0">
             <div className="relative z-10 max-w-[700px]">
-              <div className="eyebrow rise-in mb-6 flex items-center gap-3"><span className="h-px w-8 bg-[#f16a26]" />KALA SHAH KAKU · GT ROAD</div>
-              <h1 className="display-font rise-in delay-1 text-[clamp(4rem,10.6vw,9.7rem)] font-bold leading-[.78] tracking-[-.075em] text-[#f5eee4]">
-                THE TASTE<br /><span className="text-[#f16826]">OF PUNJAB</span><span className="text-[#f5eee4]">.</span>
-              </h1>
-              <p className="rise-in delay-2 mt-8 max-w-[460px] text-base leading-7 text-[#c2b9ae] sm:text-lg sm:leading-8">Traditional flavors. Rich aromas. An unforgettable PIND experience.</p>
-              <div className="rise-in delay-2 mt-8 flex flex-wrap items-center gap-3">
-                <a href="#menu" className="inline-flex min-h-14 items-center gap-8 bg-[#f26725] px-6 text-[11px] font-bold tracking-[.14em] text-[#1a120e] transition-colors hover:bg-[#ff8b51]">EXPLORE MENU <ArrowRight size={16} /></a>
-                <a href={phoneHref} className="inline-flex min-h-14 items-center gap-3 border border-white/30 px-6 text-[11px] font-bold tracking-[.14em] text-[#f5eee4] transition-colors hover:border-[#f26725] hover:text-[#ff8542]"><Phone size={14} /> BOOK A TABLE</a>
+              <div className="eyebrow hero-tag-animate mb-6 flex items-center gap-3">
+                <span className="h-px w-8 bg-[#f16a26]" />KALA SHAH KAKU · GT ROAD
               </div>
-              <div className="mt-10 flex items-center gap-3 text-xs text-[#c8beb3]">
-                <span className="flex gap-[2px] text-[#ff8a42]" aria-label="Rated 4.3 out of 5"><Star size={13} fill="currentColor" /><Star size={13} fill="currentColor" /><Star size={13} fill="currentColor" /><Star size={13} fill="currentColor" /></span>
-                <span className="font-semibold text-[#f0e8de]">4.3</span><span className="text-white/25">/</span><span>4,963+ Google Reviews</span>
+              <h1 className="display-font hero-title-animate text-[clamp(4rem,10.6vw,9.7rem)] font-bold leading-[.78] tracking-[-.075em] text-[#f5eee4]">
+                THE TASTE<br /><span className="text-shimmer-orange">OF PUNJAB</span><span className="text-[#f5eee4]">.</span>
+              </h1>
+              <p className="hero-subtitle-animate mt-8 max-w-[460px] text-base leading-7 text-[#c2b9ae] sm:text-lg sm:leading-8">
+                Traditional flavors. Rich aromas. An unforgettable PIND experience.
+              </p>
+              <div className="hero-buttons-animate mt-8 flex flex-wrap items-center gap-3">
+                <a href="#menu" className="inline-flex min-h-14 items-center gap-8 bg-[#f26725] px-6 text-[11px] font-bold tracking-[.14em] text-[#1a120e] transition-all hover:bg-[#ff8b51] hover:scale-[1.02]">
+                  EXPLORE MENU <ArrowRight size={16} />
+                </a>
+                <a href={phoneHref} className="inline-flex min-h-14 items-center gap-3 border border-white/30 px-6 text-[11px] font-bold tracking-[.14em] text-[#f5eee4] transition-all hover:border-[#f26725] hover:text-[#ff8542] hover:scale-[1.02]">
+                  <Phone size={14} /> BOOK A TABLE
+                </a>
+              </div>
+              <div className="hero-reviews-animate mt-10 flex items-center gap-3 text-xs text-[#c8beb3]">
+                <span className="flex gap-[2px] text-[#ff8a42]" aria-label="Rated 4.3 out of 5">
+                  <Star size={13} fill="currentColor" />
+                  <Star size={13} fill="currentColor" />
+                  <Star size={13} fill="currentColor" />
+                  <Star size={13} fill="currentColor" />
+                </span>
+                <span className="font-semibold text-[#f0e8de]">4.3</span>
+                <span className="text-white/25">/</span>
+                <span>4,963+ Google Reviews</span>
               </div>
             </div>
-            <div className="relative mx-auto mt-2 aspect-square w-full max-w-[470px] sm:max-w-[560px] lg:mt-0 lg:max-w-[610px]">
-              <div className="absolute inset-[3%] rounded-full border border-[#ff742c]/25" />
-              <div className="absolute inset-[9%] overflow-hidden rounded-full border-[7px] border-[#e8ded2] shadow-[0_0_0_16px_rgba(241,105,38,.08)]">
-                <img src={karahiVisual} alt="Close-up of chicken karahi, used as illustrative food imagery" className="h-full w-full object-cover" style={{ objectPosition: 'right center' }} />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#100e0c]/25 via-transparent to-[#100e0c]/10" />
+            <div className="relative mx-auto flex items-center justify-center w-full max-w-[540px] sm:max-w-[640px] lg:max-w-[700px] xl:max-w-[740px]">
+              <div className="hero-karahi-animate relative aspect-square w-full rounded-full overflow-hidden drop-shadow-[0_25px_50px_rgba(0,0,0,0.85)]">
+                <img
+                  src={karahiVisual}
+                  alt="Authentic Punjabi Chicken Karahi"
+                  className="h-full w-full object-cover select-none pointer-events-none"
+                  style={{ objectPosition: 'center' }}
+                />
               </div>
-              <div className="absolute bottom-[13%] left-[2%] flex items-center gap-3 border border-white/10 bg-[#171310]/90 px-4 py-3 backdrop-blur">
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f26725] text-[#17100c]"><Flame size={18} /></span>
-                <span><span className="block text-[9px] tracking-[.17em] text-[#afa49a]">AUTHENTIC PUNJABI</span><span className="mt-1 block text-xs font-semibold text-[#f6eee5]">Made for sharing</span></span>
-              </div>
-              <span className="absolute right-[1%] top-[14%] hidden text-[9px] font-semibold tracking-[.2em] text-[#d6c9bc] sm:block [writing-mode:vertical-rl]">GOOD FOOD. GOOD COMPANY.</span>
             </div>
           </div>
-          <a href="#about" className="absolute bottom-8 left-6 hidden items-center gap-3 text-[9px] font-semibold tracking-[.19em] text-[#9d958c] md:flex lg:left-14">SCROLL TO DISCOVER <ArrowDown size={13} /></a>
+          <a href="#about" className="absolute bottom-8 left-6 hidden items-center gap-3 text-[9px] font-semibold tracking-[.19em] text-[#9d958c] md:flex lg:left-14">
+            SCROLL TO DISCOVER <ArrowDown size={13} />
+          </a>
           <div className="absolute bottom-0 left-1/2 h-px w-[88%] -translate-x-1/2 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
         </section>
 
